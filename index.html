@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="headerContainer"> <header>
+        <h1>Weather App</h1>
+    <header> </div>
+
+    <main>
+    <div id="content" class="standardFont">
+        <p>Welcome to the Weather App! Enter your location and then hit "Get Weather" to get the latest weather updates.</p>
+    </div>
+
+    <div id="formContainer" class="standardFont">
+    <form id="searchForm">
+        <label for="location" id="label">Enter Location: </label>
+        <input type="text" id="location" name="location" placeholder="City, Country" required>
+        <button type="submit" id="formButton">Get Weather</button>
+    </form> </div>
+
+    <div id="results" class="standardFont">
+        <h2>Current Weather in: <span id="city">--</span></h2>
+        <p>Temperature: <span id="temperature">--</span> °C</p>
+        <p>Conditions: <span id="condition">--</span></p>
+    </div>
+    </main>
+
+    <div id="footer"> <footer>
+        <p>&copy; 2025 Weather App. All rights reserved.</p>
+    </footer> </div>
+
+</body>
+</html>
+
+<!-- 
+    Better practice: Box sizing & default margins
+    Add a global box-sizing and reset body margin for more predictable layout.
+-->

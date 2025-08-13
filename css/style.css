@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(180, 190, 240);
+    padding-bottom: 50px; /* space for the footer */
+}
+
+.standardFont {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#headerContainer {
+    height: auto;
+    width: 500px; 
+
+    background-size: cover; /* cover the entire area */
+    background-image: url("../assets/clouds.jpg");
+    background-repeat: no-repeat; /* prevent tiling */
+    background-position: center; /* center the image */
+
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: navy;
+    font-size: 30px;
+
+    border: 5px solid navy;
+    border-radius: 10px; /* rounded corners */
+    
+    margin: auto; /* center the header */
+
+    animation: fadeIn 4s linear;
+    /*
+     * 'ease-in-out' timing function in CSS starts the transition slowly (ease-in), accelerates in the middle,
+     * and then slows down again towards the end (ease-out).
+      */
+}
+
+#content {
+    margin-top: 40px;
+    text-align: center;
+    font-style: oblique;
+
+    animation: fadeIn 4s linear;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#footer {
+    position: fixed;
+    /*
+        The 'position' property in CSS specifies how an element is positioned in a document.
+        - static: Default value. Elements are positioned according to the normal flow of the document.
+        - relative: Element is positioned relative to its normal position. You can use top, right, bottom, and left to move it.
+        - absolute: Element is positioned relative to its nearest positioned ancestor (not static). It is removed from the normal flow.
+        - fixed: Element is positioned relative to the browser window. It stays in the same place even when the page is scrolled.
+        - sticky: Element toggles between relative and fixed, depending on the scroll position. It is treated as relative until it crosses a specified threshold, then it becomes fixed.
+    */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    font-style: italic;
+}
+
+#formContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%; /* fixed width for the form */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+
+    animation: fadeIn 4s linear;
+}
+
+#label {
+    color: navy;
+    border-radius: 5px; /* rounded corners */
+}
+
+#formButton {
+    background-color: navy; /* button background color */
+    color: white; /* button text color */
+}
+
+#results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(141, 122, 60, 0.205); /* semi-transparent background */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    /*
+     * The box-shadow property applies one or more shadow effects to an element's frame.
+     * Arguments:
+     *   - offset-x: Horizontal distance of the shadow (positive values move right, negative move left).
+     *   - offset-y: Vertical distance of the shadow (positive values move down, negative move up).
+     *   - blur-radius (optional): Amount of blur applied to the shadow (higher values create a softer shadow).
+     *   - spread-radius (optional): Size of the shadow (positive values expand, negative contract).
+     *   - color (optional): Color of the shadow (can use any valid CSS color value).
+     *   - inset (optional): Changes the shadow from outer to inner.
+     * Multiple shadows can be separated by commas.
+     */
+
+    opacity: 1; /* can be set to 0 to be initially hidden */
+}
